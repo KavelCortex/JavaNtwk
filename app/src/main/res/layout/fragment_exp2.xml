@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="cn.kavel.demo.javantwk.fragments.Exp2Fragment"
+             android:padding="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tv_description"
+                android:text="@string/exp2_desc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <FrameLayout
+                android:id="@+id/input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:id="@+id/input_field"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/dir_field">
+
+                    <EditText
+                            android:layout_width="0dp"
+                            android:text=""
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:id="@+id/et_path"
+                            android:layout_weight="3"
+                            android:hint="@string/exp2_dir_hint"
+                            android:enabled="false"
+                            android:inputType="text"/>
+
+                    <Button
+                            android:text="@string/exp2_dir_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_dir"
+                            android:layout_weight="1"
+                            style="@style/Widget.AppCompat.Button"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/input">
+
+                    <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/et_input"
+                            android:hint="@string/exp2_input"
+                            android:layout_weight="3"/>
+
+                    <Button
+                            android:text="@string/exp2_paste"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_paste"
+                            android:layout_weight="1"
+                            style="@style/Widget.AppCompat.Button"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/btn_field">
+
+                    <Button
+                            android:text="@string/exp2_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_go"
+                            android:layout_weight="2"
+                            style="@style/Widget.AppCompat.Button.Colored"/>
+
+                    <Button
+                            android:text="@string/exp2_btn_resolve"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_resolve_only"
+                            android:layout_weight="1"
+                            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_result_resolve"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_result_download"/>
+
+    </LinearLayout>
+
+</FrameLayout>

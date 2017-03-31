@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+            android:text="@string/exp1_desc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hint"
+            android:gravity="center"
+            android:layout_gravity="bottom"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/exp1_desc1"
+                android:text="@string/exp1_desc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <FrameLayout
+                android:id="@+id/input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:id="@+id/input_field"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/exp1_input"
+                        android:hint="@string/exp1_input"/>
+
+                <Button
+                        android:text="@string/exp1_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_go"/>
+            </LinearLayout>
+
+            <TextView
+                    android:text="@string/exp1_wrapper1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/weakNetworkWrapper"
+                    android:background="@android:drawable/editbox_dropdown_dark_frame"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/result"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
