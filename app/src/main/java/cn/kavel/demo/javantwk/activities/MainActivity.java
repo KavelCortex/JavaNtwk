@@ -1,6 +1,5 @@
 package cn.kavel.demo.javantwk.activities;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -10,6 +9,7 @@ import cn.kavel.demo.javantwk.adapter.SectionsPagerAdapter;
 import cn.kavel.demo.javantwk.fragments.AboutFragment;
 import cn.kavel.demo.javantwk.fragments.Exp1Fragment;
 import cn.kavel.demo.javantwk.fragments.Exp2Fragment;
+import cn.kavel.demo.javantwk.fragments.Exp4Fragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         pages.add(new AboutFragment());
         pages.add(new Exp1Fragment());
         pages.add(new Exp2Fragment());
+        pages.add(new Exp4Fragment());
         mSectionsPagerAdapter.notifyDataSetChanged();
     }
 

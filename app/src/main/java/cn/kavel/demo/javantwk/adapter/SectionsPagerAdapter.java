@@ -18,7 +18,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return (Fragment) MainActivity.pages.get(position);
+        return MainActivity.pages.get(position);
     }
 
     @Override
@@ -35,6 +35,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 return context.getString(R.string.exp1_title);
             case 2:
                 return context.getString(R.string.exp2_title);
+            case 3:
+                return context.getString(R.string.exp4_title);
         }
         return null;
     }

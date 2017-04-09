@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="cn.kavel.demo.javantwk.fragments.Exp4Fragment">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:ems="10"
+                    android:id="@+id/et_address"
+                    android:layout_weight="7"
+                    android:inputType="textUri|textWebEditText"
+                    android:hint="@string/exp4_address"
+                    android:drawableLeft="@drawable/ic_search_black_18dp"
+                    android:imeOptions="actionGo"
+                    />
+
+            <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_arrow_forward_black_36dp"
+                    android:id="@+id/iv_btn_forward"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <com.tencent.smtt.sdk.WebView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/webview">
+
+        </com.tencent.smtt.sdk.WebView>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:gravity="center">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/selector_arrow_back"
+                    android:id="@+id/iv_btn_back"
+                    android:layout_weight="1"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_refresh_black_36dp"
+                    android:id="@+id/iv_btn_refresh"
+                    android:layout_weight="1"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_file_download_black_36dp"
+                    android:id="@+id/iv_btn_download"
+                    android:layout_weight="1"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/selector_arrow_forward"
+                    android:id="@+id/iv_btn_front"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
